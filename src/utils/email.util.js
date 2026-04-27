@@ -1,5 +1,5 @@
 import { tp } from "../config/email.config.js";
-
+const x = 10;
 export const sendEmail = async (to, subject, body) => {
   try {
     await tp.sendMail({

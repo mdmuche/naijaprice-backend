@@ -23,6 +23,7 @@ export const verifyToken = (req, res, next) => {
 
     next();
   } catch (error) {
+    console.error("Token verification failed:", error);
     return res.status(httpStatus.FORBIDDEN).json({
       success: false,
       message: "Invalid or expired token.",

@@ -83,7 +83,7 @@ export const register = async (req, res) => {
   }
 };
 
-export const verifyEmail = async (req, res, next) => {
+export const verifyEmail = async (req, res) => {
   try {
     const { token } = req.params;
 
